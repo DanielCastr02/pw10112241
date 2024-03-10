@@ -76,6 +76,47 @@ header nav ul li{
 }
 
 
+
+#footersec01{
+    border: 1px solid red;
+    float: right;
+    position: relative;
+    top: -55px;
+    left: -35px;
+}
+#footersec01 span{
+    border: 1px solid red;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+#footersec02{
+    background-color: #4267B3;
+}
+
+#footersec02 article{
+    color: white;
+    display: inline-block;
+    width: 32%;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+#footersec02art03{
+    float: right;
+    text-align: right;
+    margin-top: -45px;
+}
+
+#footersec02 input{
+    background: #4267B3;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white;
+    padding: 5px 10px 5px 10px;
+}
+
+
 .rosita{
     color: #FF0099;
 }
@@ -93,22 +134,4 @@ header nav ul li{
 }
 .negritas{
     font-weight: bold;
-}
-
-
-#footersec01{
-    border: 1px solid red;
-    float: right;
-    position: relative;
-    top: -55px;
-    left: -35px;
-}
-
-#footersec02{
-    background-color: #4267B3;
-    border: 1px solid red;
-}
-#footersec02 article{
-    display: inline-block;
-    width: 32%;
 }
