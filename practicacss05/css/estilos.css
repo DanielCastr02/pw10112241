@@ -1,0 +1,39 @@
+html{
+    --color-AzulTop: rgb(36 93 146);
+    --color-body: rgb(239 239 239)
+    --color-AzulLateral: rgb(29 74 115);
+}
+body{
+    font-size:  16px;
+    margin: 0px auto;
+    max-width: 1024px;
+    background: var(--color-body);
+}
+header{
+    background: var(--color-AzulTop);
+}
+header img{
+    margin-left: 350px;
+}
+nav ul{
+    margin-left: 650px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li img{
+    width: 100px;
+}
+
+#seclateral{
+    width: 20%;
+}
+#art01lateral{
+    background: aqua;
+}
+#art01lateral ul li{
+    list-style: none;
+}
+main{
+    width: 75%;
+}
