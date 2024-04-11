@@ -1,7 +1,6 @@
 html{
     --color-negro: #000000;
     --color-verde: rgb(149	240	94);
-    --color-footer: rgb(201,201,201)
 }
 body{
     font-size: 16px;
@@ -26,41 +25,23 @@ header nav img{
 #headsec02 :nth-child(2){
     margin-left: 740px;
     width: 160px;
+
 }
 hr{
-    border-style: dashed ;
-    border-width: 0.5px;
-    
+    border-style: dashed;
 }
 #sec01 article{
     display: inline-block;
 }
-#sec01art01{
-    width: 66%;
+#sec01 article :nth-child(1){
+    width: 55%;
+    
 }
-#sec01art02{
-    width: 10%;
+#sec01 article img{
+    width: 80px;
 }
-#sec01art02 img{
-    width: 450px;
-}
-#sec02 img{
-    vertical-align: middle;
-}
-
-#years{
-    position: relative;
-    margin-top: -150px;
-    margin-left: 680px;
-    width: 150px;
-}
-
-footer article{
-    color: var(--color-footer);
-    display: inline-block;
-    margin-left: 20px;
-    vertical-align: top;
-    width: 17%;
+#sec01 article :nth-child(2){
+    width: 33%;
 }
 
 .color-negro{
@@ -70,10 +51,10 @@ footer article{
     color: var(--color-verde);
 }
 .letra-grande{
-    font-size: 4em;
+    font-size: 3.5em;
 }
 .letra-footer{
-    font-size: 1.3em;
+
 }
 .negritas{
     font-weight: bold;
