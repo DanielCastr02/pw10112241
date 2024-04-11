@@ -1,0 +1,9 @@
+Selectores
+    pseudoelementos
+    etiquetas(p div, article, section)
+    id (identificadores)# <-- unicos
+    clases . <-- punto, reciclar
+
+    media queries
+
+    NOTA: el orden de etiquetas, id y clases van en orden alfabetico por buena practica

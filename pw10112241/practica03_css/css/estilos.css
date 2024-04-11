@@ -1,0 +1,106 @@
+html{
+    /*custom properties existe desde ccs3( basicamente una variabe)*/
+    --color-verde: #A7D12B; 
+    --color-negro: #353535;
+    --color-rojo: #D33040;
+    --color-gris: lightgray;
+    --fondo-negro: #2C2C2C;
+    --color-linea:#949494;
+    --color-azul: lightblue;
+    --color-blanco: white;
+}
+body{
+    font-size: 16px; /*1em*/
+    margin: 0 auto; /*centrado*/
+    max-width: 1024px;
+}
+header ul li{
+    display: inline-block;
+    margin-left: -32px;
+    margin-right: 10px;
+    padding: 8px 15px;
+    text-align: center;
+    width: 19%;
+}
+header ul li:nth-child(1){
+    margin-left: -45px;
+}
+header ul li:nth-child(2){
+    background: var(--color-verde);
+}
+header ul li:nth-child(3){
+    background: var(--color-negro);
+}
+header ul li:nth-child(4){
+    background: var(--color-rojo);
+}
+header ul li:nth-child(5){
+    background: var(--color-gris);
+    width: 17.5%;
+}
+footer article{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    vertical-align: top;
+    width: 31%;
+}
+
+footer img{
+    width: 300px;
+}
+hr{
+    border-style: dashed;
+    color: var(--color-linea);
+}
+section article{
+    display: inline-block;
+    height: 280px;
+    margin-left: -5px;
+    margin-top: 15px;
+    padding: 18px 8px;
+    vertical-align: top;
+    width: 18%; /*17.9%*/
+}
+section article ul{
+    list-style: none;
+}
+section article:nth-child(2){
+    background: var(--color-verde);
+}
+section article:nth-child(3){
+    background: var(--color-negro);
+}
+section article:nth-child(4){
+    background: var(--color-rojo);
+}
+section article:nth-child(5){
+    background: var(--color-gris);
+    margin-right: 4px;
+}
+
+section,footer{
+    background: var(--fondo-negro);
+}
+section img{
+    width: 150px;
+}
+
+.letra-blanca{
+    color: white;
+}
+.letra-gris{
+    color: var(--color-linea);
+}
+.letra-azul{
+    color: var(--color-azul);
+}
+.tam-tarjetas{
+    font-size: 1.7em;
+}
+.tam-menu-lateral{
+    font-size: 1.1em;
+}
+.read-more{
+    margin-left: 220px;
+}
