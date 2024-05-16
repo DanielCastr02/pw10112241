@@ -31,7 +31,19 @@
                         <td> {{ cliente.rfc }}</td>
                         <td> {{ cliente.curp }}</td>
                         <td> {{ cliente.cp }}</td>
-                        <td> editar &nbsp; Borrar</td>
+                        <td>
+                            <button class="btn btn-primary">
+                                Editar
+                            </button>
+                            <button class="btn btn-danger" @click="borrarCliente(cliente.id)">
+                                Borrar
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td colspan="g" style="text-align: center;"> Sin registros!</td>
                     </tr>
                 </tbody>
             </table>
@@ -56,6 +68,12 @@
                 axios.get('http://localhost:3000/api/clientes').then(res =>{
                     this.clientes = res.data;
 
+                });
+            },
+            borrarCliente(idClienteDelete){
+                axios.delete('http://localhost:3000/api/clientes'+idClienteDelete).then(res=>{
+                    console.log(res);
+                    this.getClientes();
                 })
             }
 
