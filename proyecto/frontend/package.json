@@ -9,10 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vee-validate/zod": "^4.12.8",
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
+    "vee-validate": "^4.12.8",
     "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",

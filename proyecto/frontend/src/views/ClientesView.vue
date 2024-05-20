@@ -71,12 +71,11 @@
                 });
             },
             borrarCliente(idClienteDelete){
-                axios.delete('http://localhost:3000/api/clientes'+idClienteDelete).then(res=>{
+                axios.delete('http://localhost:3000/api/clientes/'+idClienteDelete).then(res=>{
                     console.log(res);
                     this.getClientes();
                 })
             }
-
         }
     }
 </script>
