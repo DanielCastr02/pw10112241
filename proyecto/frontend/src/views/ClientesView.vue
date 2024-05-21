@@ -21,12 +21,12 @@
                     <th>CP</th>
                     <th>Acciones</th>
                 </thead>
-                <tbody>
+                <tbody v-if="clientes.length > 0">
                     <tr v-for ="(cliente,index) in clientes" :key="index">
                         <td> {{ cliente.id }}</td>
                         <td> {{ cliente.nombre }}</td>
-                        <td> {{ cliente.direccion }}</td>
                         <td> {{ cliente.apellido }}</td>
+                        <td> {{ cliente.direccion }}</td>
                         <td> {{ cliente.telefono }}</td>
                         <td> {{ cliente.rfc }}</td>
                         <td> {{ cliente.curp }}</td>
@@ -41,7 +41,7 @@
                         </td>
                     </tr>
                 </tbody>
-                <tbody>
+                <tbody v-else>
                     <tr>
                         <td colspan="g" style="text-align: center;"> Sin registros!</td>
                     </tr>
