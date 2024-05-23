@@ -108,11 +108,11 @@ import * as zod from 'zod';
             }
         },
         mounted(){
-            this.getCliente(this.$route.params.id)
+            this.getCliente(this.$route.params.id);
         },
         methods:{
             getCliente(clienteID){
-                axios.get('http://localhost:3000/api/clientes/'+clienteID).then(res=>{
+                axios.get('http://localhost:3000/api/clientes/' + clienteID).then(res=>{
                     this.model.cliente = res.data[0];
                     // this.model.cliente.id = res.data[0].id;
                     // this.model.cliente.nombre = res.data[0].nombre;
