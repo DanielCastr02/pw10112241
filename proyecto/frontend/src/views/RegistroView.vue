@@ -7,16 +7,22 @@
                 class="img-fluid" alt="Phone image">
             </div>
             <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+                
+
                 <form>
+                <h3 class="mb-5"> Registro de Usuarios</h3>
+                <div v-if="mensaje==1" class="alert alert-primary" role="alert">
+                    Usuario agregado con exito!
+                </div>
                 <!-- Email input -->
                 <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="email" id="form1Example13" class="form-control form-control-lg" />
+                    <input v-model="correo" type="email" id="form1Example13" class="form-control form-control-lg" />
                     <label class="form-label" for="form1Example13">Email address</label>
                 </div>
 
                 <!-- Password input -->
                 <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="password" id="form1Example23" class="form-control form-control-lg" />
+                    <input v-model="password" type="password" id="form1Example23" class="form-control form-control-lg" />
                     <label class="form-label" for="form1Example23">Password</label>
                 </div>
 
@@ -30,7 +36,7 @@
                 </div>
 
                 <!-- Submit button -->
-                <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block">Sign in</button>
+                <button @click.prevent="registro()" type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block">Sign in</button>
 
                 <div class="divider d-flex align-items-center my-4">
                     <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
@@ -50,3 +56,27 @@
         </div>
     </section>
 </template>
+<script>
+import {getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+    export default {
+        name: "RegistroView",
+        data() {
+            return{
+            correo: '',
+            password: '',
+            mensaje: 0
+            }
+        },
+        methods:{
+            registro(){
+                createUserWithEmailAndPassword(getAuth(), this.correo, this.password).then((data) =>{
+                    this.mensaje = 1
+                    this.correo = ''
+                    this.password = ''
+                }).catch((error) => {
+                    alert(error.message)
+                })
+            }
+        }
+    }
+</script>
